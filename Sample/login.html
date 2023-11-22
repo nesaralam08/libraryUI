@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(240, 196, 135);
+            position: relative;
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+            font-size: 15px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        .content{
+            height: 95vh;
+            width: 100%;
+            position:absolute;
+        }
+        .dept{
+            height: 97%;
+            width: 200px;
+            position: absolute;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+        .dept li{
+            list-style: none;
+            margin: 15px 0;
+        }
+        .content-area{
+            position: absolute;
+            left: 200px;
+            height: 97vh;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-area form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column ;
+            height: 300px;
+            width: 250px;
+        }
+        .item{
+            margin: 15px 0;
+        }
+        .item button{
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Logo  </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="content">
+        <div class="dept">
+            <ul>
+                <li>CSE</li>
+                <li>ECE</li>
+                <li>EEE</li>
+                <li>CIVIL</li>
+            </ul>
+        </div>
+        <div class="content-area">
+            <form>
+                <div class="item"><h2>User Login</h2></div>
+                <div class="item">
+                    <label>User Name:</label>
+                    <input type="text">
+                </div>
+                <div class="item">
+                    <label>Password:</label>
+                    <input type="password">
+                </div>
+                <div class="item">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

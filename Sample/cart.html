@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        .navbar{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(240, 196, 135);
+            position: relative;
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+            font-size: 18px;
+            /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font-weight: 600;
+        }
+        .content{
+            height: 95vh;
+            width: 100%;
+            position:absolute;
+        }
+        .dept{
+            height: 97%;
+            width: 200px;
+            position: absolute;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+        .dept li{
+            list-style: none;
+            margin: 15px 0;
+        }
+        .content-area{
+            position: absolute;
+            left: 200px;
+            height: 97vh;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
+            height: 80%;
+            width: 100%;
+        }
+        .box{
+            min-height: 400px;
+            height: fit-content;
+            width:250px;
+            border: 2px solid rgb(181, 172, 172);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .box img{
+            height: 60%;
+            width: 100%;
+            display: inline-block;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .box p{
+            margin: 8px 0;
+        }
+        .box button{
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(184, 184, 242);
+        }
+        h1{
+            font-size: 1.8rem;
+            color: darkblue;
+            background-color:whitesmoke;
+            width:100vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Logo  </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="content">
+        <div class="dept">
+            <ul>
+                <li>CSE</li>
+                <li>ECE</li>
+                <li>EEE</li>
+                <li>CIVIL</li>
+            </ul>
+        </div>
+        <div class="content-area">
+            <h1>Your Cart List</h1>
+            <div class="container">
+                <div class="box">
+                    <img src="https://www.ajayonlinestall.com/wp-content/uploads/2021/12/9789391392994.jpg" alt="Not Found">
+                    <p>Book: Let us c</p>
+                    <p>Author: Yashwant Kanetkar</p>
+                    <p>Publication: BPB</p>
+                    <p>Price : 200Rs.</p>
+                    <button type="button">Buy Now</button>
+                </div>
+                <div class="box">
+                    <img src="https://anjanibooks.com/wp-content/uploads/2022/10/1-Let-Us-Python-4th-Edition.jpg" alt="Not Found">
+                    <p>Book: Let us pyhton</p>
+                    <p>Author: Yashwant Kanetkar</p>
+                    <p>Publication: BPB</p>
+                    <p>Price : 180Rs.</p>
+                    <button type="button">Buy Now</button>
+                </div>
+                <div class="box">
+                    <img src="https://www.madrasshoppe.com/24449-large_default/ansi-c-programming-gary-j-bronson.jpg" alt="Not Found">
+                    <p>Book: Let us c</p>
+                    <p>Author: E-Balagurusamy</p>
+                    <p>Publication: BPB</p>
+                    <p>Price : 250Rs.</p>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

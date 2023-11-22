@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        .navbar{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(240, 196, 135);
+            position: relative;
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .content{
+            height: 95vh;
+            width: 100%;
+            position:absolute;
+        }
+        .dept{
+            height: 97%;
+            width: 200px;
+            position: absolute;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+        .dept li{
+            list-style: none;
+            margin: 15px 0;
+        }
+        .content-area{
+            position: absolute;
+            left: 200px;
+            height: 97vh;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .content-area form{
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* flex-direction:column ; */
+            min-height: 300px;
+            height: fit-content;
+            min-width: 250px;
+            width: fit-content;
+            /* border: 2px solid rgb(60, 60, 68); */
+            padding: 20px;
+            background-color:rgb(236, 229, 229);
+            border-radius: 10px;
+            box-shadow: 0px 3px 15px rgba(0,0,0,.5);
+        }
+        .item button{
+            padding: 10px 15px;
+        }
+        .item{
+            margin: 10px 5px;
+        }
+        .item input[type='text'],input[type='email'],textarea{
+            padding: 7px 10px;
+            width: 100%;
+            border-radius: 5px;
+            outline: none;
+            background: rgb(200, 200, 200);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Logo  </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="content">
+        <div class="dept">
+            <ul>
+                <li>CSE</li>
+                <li>ECE</li>
+                <li>EEE</li>
+                <li>CIVIL</li>
+            </ul>
+        </div>
+        <div class="content-area">
+            <h2>User Registration</h2>
+            <form>
+                <div class="item">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="item">
+                    <label>Password:</label>
+                    <input type="text" min="6" placeholder="Enter password min 6 digit">
+                </div>
+                <div class="item">
+                    <label>Email :</label>
+                    <input type="email" placeholder="Enter a valid email">
+                </div>
+                <div class="item">
+                    <label for="">Mobile:</label>
+                    <input type="text" minlength="10" maxlength="10" placeholder="Enter valid mobile no.">
+                </div>
+                <div class="item">
+                    <label for="">Gender</label>
+                    <input type="radio" name="sex">Male
+                    <input type="radio" name="sex">Female
+                    <input type="radio" name="sex">Others
+                </div>
+                <div class="item">
+                    <label for="">Date of Birth:</label>
+                    <input type="date">
+                </div>
+                <div class="item">
+                    <label for="">Languages:</label>
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">English
+                    <input type="checkbox">Tamil
+                    <input type="checkbox">Telugu
+                </div>
+                <div class="item">
+                    <label for="">Address:</label>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="item">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
