@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: url("Images/body-bg.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+:root{
+    --primary-font:'Kanit', sans-serif;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.Nav-bar{
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(10px);
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+}
+.nav-link:hover{
+    color: rgb(146, 46, 241);
+}
+
+.dropdown-item:hover{
+    background-color: rgb(146, 46, 241);
+    transition: .3s all ease-in-out;
+    color: white;
+}
+h1{
+    font-size: 1.5rem;
+}
+
+li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+li a:hover{
+    color: rgb(146, 46, 241);
+} 
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* padding: 150px; */
+}
+/* Footer Section */
+.foot{
+    min-height: fit-content;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: -webkit-linear-gradient(to right, #00001a, #00004d);
+    background: linear-gradient(to right, #00001a, #00004d); */
+}
+.fab{
+    color: gray;
+}
+.fab:hover{
+    color: rgb(146, 46, 241);
+} 
+/* Home Section End */
+
+/* Registration Start */
+span{
+    color: black;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration{
+    height: 600px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 10px 30px 10px 30px;
+    backdrop-filter: blur(10px);
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+.name input[type="text"]{
+    width: 48%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+}
+.name input::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+.mob{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+.mob input{
+    width: 48%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+}
+.mob input::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+.gender{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+.gen{
+    accent-color: blueviolet;
+}
+.dob{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+}
+.dob input{
+    width: 60%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+}
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.lang input{
+    accent-color:blueviolet;
+}
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.address textarea{
+    width: 50%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+}
+.reg-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.reg-btn p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.s-btn{
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+.u-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-user{
+    font-size: 2.5rem;
+    color: white;
+}
+h5{
+    color: white;
+}
+/* Media Query for mobile screen */
+@media screen and (min-width: 250px) and (max-width:576px)
+{
+    .registration{
+        width: 98%;
+        padding: 20px;
+    }
+    .lang{
+        gap: 0px;
+    }
+    .address textarea{
+        width: 80%;
+    }
+}
+/* Media Query for Tablet */
+@media screen and (min-width: 576px) and (max-width:1180px)
+{
+    .registration
+    {
+        width: 85%;
+        padding: 30px;
+    }
+}

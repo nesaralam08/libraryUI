@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: url("Images/body-bg.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+:root{
+    --primary-font:'Kanit', sans-serif;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.Nav-bar{
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(10px);
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+}
+.nav-link:hover{
+    color: rgb(146, 46, 241);
+}
+.f-btn{
+    /* background-color: rgb(146,46,241); */
+    background: transparent;
+}
+.b1{
+    background-color: rgb(146, 46, 241);
+}
+.dropdown-item:hover{
+    background-color: rgb(146, 46, 241);
+    transition: .3s all ease-in-out;
+    color: white;
+}
+h1{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.5rem;
+    color: white;
+}
+
+li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+li a:hover{
+    color: rgb(146, 46, 241);
+} 
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* padding: 150px; */
+}
+/* Footer Section */
+.foot{
+    min-height: fit-content;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: -webkit-linear-gradient(to right, #00001a, #00004d);
+    background: linear-gradient(to right, #00001a, #00004d); */
+}
+.fab{
+    color: gray;
+}
+.fab:hover{
+    color: rgb(146, 46, 241);
+} 
+/* Home Section End */
+
+
+/* Login Section Start */
+.login{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(10px);
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.uname,.upas{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+}
+.uname::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+.upas::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+.log-reg{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.l-btn{
+    border-radius: 5px;
+    width: 45%;
+    height: 40px;
+}
+.r-btn{
+    border-radius: 5px;
+    width: 45%;
+    height: 40px;
+}
+.login p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.form .log-reg a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.form .log-reg .check input{
+    height: 30px;
+}
+form{
+    width: 70%;
+}
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+span{
+    color: black;
+}
+.u-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-user{
+    font-size: 2.5rem;
+    color: white;
+}
