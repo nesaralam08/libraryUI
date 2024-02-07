@@ -19,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url("Images/login.jpg");
+    /* background-color:#333333; */
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -90,7 +91,7 @@ span{
 }
 .registration{
     height: 600px;
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,6 +224,11 @@ form{
 }
 h5{
     color: white;
+}
+#error{
+    display: none;
+    background-color: red;
+    color: black;
 }
 /* Media Query for mobile screen */
 @media screen and (min-width: 250px) and (max-width:576px)

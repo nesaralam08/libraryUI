@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+}
+body{
+    background-color:rgb(225, 194, 255);
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    transition: .5s all ease-in-out;
+}   
+.container{
+    min-height: 120px;
+    border: 2px solid whitesmoke ;
+    border-radius: 10px;
+    min-width: fit-content;
+    padding: 10px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.5);
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    height:fit-content;
+    flex-direction: row;
+    gap: 10px;
+}
+.input input{
+    padding: 10px;
+    width: 60%;
+    outline: none;
+    background:rgba(0,0,0,.4);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.input input::placeholder{
+    color: whitesmoke;
+}
+.btn{
+    padding: 10px 25px;
+    background: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box{
+    margin-top: 20px;
+    height: fit-content;
+    color: white;
+    padding-left: 25px;
+}
+h1{
+    text-shadow: 0px 3px 15px rgba(0,0,0,.8);
+}
+.rem{
+    padding: 10px 25px;
+    background: lightcoral;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box ol li{
+    margin-top: 10px;
+    /* text-align: center; */
+    text-wrap:balance;
+}
+.output{
+    color: rgb(168, 52, 52);
+    text-align: center;
+}
+@media screen and (min-width: 250px) and (max-width:576px)
+{
+    .input{
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    .input input{
+        width: 90%;
+    }
+    .btn{
+        display: inline;
+    }
+    .rem{
+        display: inline;
+    }
+}
